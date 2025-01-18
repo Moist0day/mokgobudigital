@@ -1,0 +1,293 @@
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px 9%;
+    text-align: center;
+}
+.service .heading{
+    font-size:40px;
+    margin-bottom: 20px;
+
+}
+.service .wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.wrapper .box{
+    padding: 30px 20px;
+    background: #FFFDD0;
+    border-radius: 10px;
+}
+
+.wrapper .box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(255, 253, 207, .2);
+
+}
+.box i{
+    font-size: 60px;
+    color:blueviolet;
+}
+.box h2{
+    font-size: 25px;
+}
+.box p{
+    margin: 10px 0 18px;
+}
+.box .btn{
+    display: inline-block;
+    padding: 8px 20px;
+    background: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 6px;
+    color: #FFFDD0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+.box .btn:hover{
+background: transparent;
+color:blueviolet
+}
+
+@media screen and (max-width: 992px) {
+    .service{
+        padding: 20px 5%;
+    }
+}
+    
+@media screen and (max-width: 350px) { 
+    .service .wrapper {
+        grid-template-columns: repeat (auto-fit, minmax(289px, 1fr));
+    }
+}
+
+.navbar{
+    width: 85%; 
+    margin: auto;
+    padding: 35px 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    position:relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color:blue;
+    text-transform: uppercase;
+
+}
+
+.navbar ul li::after {
+    content : '';
+    height : 3px;
+    position : absolute;
+    left : 0;
+    bottom : -10px;
+    background-color: grey;
+    width: 100%;
+    } 
+
+    .logo{
+        width: 180px;
+        cursor: pointer;
+        mix-blend-mode: multiply;
+    }
+
+    .home-intro h1{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:black;
+
+    }
+    .home-intro img{
+        max-width: 100%;
+        height: auto;
+        opacity: 0,5;
+    }
+    .team{
+        margin: 75px 0;
+    }
+
+    .team h1{
+        text-align: center;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: blue;
+        padding-bottom: 10px;
+    }
+    .team h1::after{
+        content: '';
+        background: blue;
+        display: block;
+        height: 3px;
+        width:150px;
+        margin: 10px auto;
+    }
+    
+    .profile{
+        margin-top: 25px;
+        display: inline-block
+    }
+    .profile .img-box{
+        opacity: 1;
+        display: block;
+        position: relative;
+        
+        
+    }
+
+    .profile h2{
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 15px;
+        
+    }
+    
+    .profile h3{
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 15px;
+        
+    }
+.img-responsive{
+    width: 40%;
+    height: 40%;
+    box-align: center;
+   
+}
+  
+
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(scott-graham-5fNmWej4tAA-unsplash.jpg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500 bold;
+    color:black;
+    
+}
+.contact .content p{
+    font-weight: 300;
+    color:blue;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+min-width: 60px;
+height: 60px;
+background: #FFFDD0;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #FFFDD0;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #FFFDD0;
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+font-size: 30px;
+color: #333;
+font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input, .contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span, 
+.contactForm .inputBox input:valid ~ span
+.contactForm .inputBox textarea:focus ~ span, 
+.contactForm .inputBox textarea:valid ~ span{
+    color: blue;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media (max-width: 991px){
+    .contact{padding: 50px;}
+    .container{flex-direction: column;}
+    .container .contactInfo{ margin-bottom: 40px;}
+    .container .contactInfo , .contactForm{ width: 100%;}
+}
